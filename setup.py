@@ -20,7 +20,7 @@ from setuptools import setup
 
 
 if platform.python_implementation() == "PyPy":
-    PY_MODULES = ["psycopg2.py"]
+    PY_MODULES = ["psycopg2"]
     INSTALL_REQUIRES = ["psycopg2cffi"]
 else:
     PY_MODULES = []
@@ -29,7 +29,7 @@ else:
 
 setup(
     name="psycopg2cffi-compat",
-    version="1.0",
+    version="1.1",
 
     description="A Simple library to enable psycopg2 compatability",
     license="Apache License v2.0",
